@@ -1,6 +1,6 @@
 .center {
   /* Contexto */
-  width: 1280px;
+  width: 1180px;
   margin: 0 auto;
 }
 
@@ -28,10 +28,61 @@
   height: 100%;
 }
 
+/* FORMULARIO */
 .form {
+  padding: 10px;
   width: 400px;
-  height: 100%; /* height herdado do elemento anterior (.container-banner) */
+  height: calc(
+    100% + 30px
+  ); /* height herdado do elemento anterior (.container-banner) */
+  position: relative;
+  top: -15px;
+  border: 8px solid #ccc;
 
   background-color: white;
   float: right; /* Também pode usar display: inline-block no formo... e text-align: right no .container-banner > .center */
+}
+
+.form h2 {
+  font-weight: normal;
+  color: #999;
+  font-size: 18px;
+}
+
+.input-container {
+  margin-top: 20px;
+}
+
+.input-container span,
+.form p {
+  display: inline-block;
+  width: 100%;
+  color: #bbb;
+  font-size: 17px;
+}
+
+.form p {
+  margin: 20px 0;
+}
+
+.input-container input[type="text"] {
+  margin-top: 8px;
+  width: 344px;
+  height: 55px;
+  border: 1px solid #ccc;
+}
+
+.form .input-submit-container {
+  text-align: center;
+}
+
+.form input[type="submit"] {
+  cursor: pointer;
+  width: 280px;
+  height: 56px;
+  background-color: #363a6d;
+  color: white;
+  font-size: 25px;
+  display: inline-block;
+  border: 0;
 }
