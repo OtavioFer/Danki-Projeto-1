@@ -1,6 +1,6 @@
 .center {
   /* Contexto */
-  width: 1180px;
+  width: 1100px;
   margin: 0 auto;
 }
 
@@ -37,7 +37,8 @@
   ); /* height herdado do elemento anterior (.container-banner) */
   position: relative;
   top: -15px;
-  border: 8px solid #ccc;
+  border: 8px solid rgba(120, 120, 120, 0.7);
+  background-clip: padding-box; /* Aplica a opacidade mesmo com fundo branco */
 
   background-color: white;
   float: right; /* Também pode usar display: inline-block no formo... e text-align: right no .container-banner > .center */
@@ -84,6 +85,7 @@
 }
 
 .button-48 {
+  /* Button style */
   width: 280px;
   height: 56px;
   appearance: none;
@@ -116,7 +118,6 @@
   vertical-align: baseline;
   white-space: nowrap;
 }
-
 .button-48:before {
   animation: opacityFallbackOut 0.5s step-end forwards;
   backface-visibility: hidden;
@@ -145,4 +146,41 @@
 .button-48 span {
   z-index: 1;
   position: relative;
+}
+
+/* LIST */
+.container-list {
+  padding: 30px;
+  margin-top: 40px;
+  float: left;
+  width: 519px;
+  height: 270px;
+  background-color: rgba(33, 35, 67, 0.7);
+}
+
+.container-list ul {
+  list-style-position: inside;
+}
+
+.container-banner ul li {
+  margin-top: 26px;
+  color: white;
+}
+
+/* CONTAINER-2 */
+.container-2{
+  padding: 70px 0;
+  background-color: #ddd;
+  text-align: center;
+}
+
+.container-2 h2{
+  font-weight: normal;
+}
+
+.container-2 p{
+  margin: 15px 0;
+  width: 698px;
+  display: inline-block;
+  text-align: justify;
 }
